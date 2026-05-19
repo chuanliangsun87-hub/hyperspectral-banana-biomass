@@ -1,0 +1,14 @@
+numpy
+pandas
+rasterio
+spectral
+scikit-image
+scikit-learn
+scipy
+pywt
+matplotlib
+seaborn
+tensorflow
+joblib
+tqdm
+opencv-python

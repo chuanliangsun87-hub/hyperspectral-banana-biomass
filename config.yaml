@@ -1,0 +1,19 @@
+# 配置示例，修改为你的路径与参数
+data:
+  hyperspectral_dir: "data/hyperspectral_images"   # 存放多时相高光谱影像的目录（GeoTIFF/ENVI）
+  ground_truth_csv: "data/ground_truth/ground_truth.csv"  # 样点实测 (id,x,y,row,col,height,biomass,phenology_phase)
+  wavelengths_file: ""  # 可选：波长文件（每行一个波长，单位 nm）
+preprocessing:
+  remove_bad_bands: true
+  smoothing_sigma: 1.0
+feature:
+  window_size: 9  # 提取纹理/结构的窗口大小（像素）
+models:
+  random_state: 42
+  test_size: 0.2
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 1e-3
+output:
+  results_dir: "results"
